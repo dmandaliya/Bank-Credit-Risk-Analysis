@@ -174,7 +174,7 @@ def train_model(df):
     X_tr, _, y_tr, _ = train_test_split(X, y, test_size=.2, random_state=42, stratify=y)
     X_r, y_r = SMOTE(random_state=42).fit_resample(X_tr, y_tr)
     m = XGBClassifier(n_estimators=200, learning_rate=.05, max_depth=5,
-                      use_label_encoder=False, eval_metric="mlogloss",
+                      eval_metric="mlogloss",
                       random_state=42, n_jobs=-1)
     m.fit(X_r, y_r)
     return m, FEAT, le
