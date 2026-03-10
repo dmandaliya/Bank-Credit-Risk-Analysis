@@ -173,9 +173,9 @@ def train_model(df):
     X, y = df[FEAT], df["risk_score_numeric"]
     X_tr, _, y_tr, _ = train_test_split(X, y, test_size=.2, random_state=42, stratify=y)
     X_r, y_r = SMOTE(random_state=42).fit_resample(X_tr, y_tr)
-    m = XGBClassifier(n_estimators=200, learning_rate=.05, max_depth=5,
+    m = XGBClassifier(n_estimators=50, learning_rate=.1, max_depth=4,
                       eval_metric="mlogloss",
-                      random_state=42, n_jobs=-1)
+                      random_state=42, n_jobs=1)
     m.fit(X_r, y_r)
     return m, FEAT, le
 
