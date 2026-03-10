@@ -220,4 +220,4 @@ A real-time credit assessment app simulating a bank's internal loan review tool.
 
 ## License
 
-This is a portfolio project built on a fully synthetic dataset. No real customer data was used.
+MIT License — free to use and modify.
