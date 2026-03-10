@@ -28,8 +28,6 @@ env/
 .idea/
 *.swp
 
-# Streamlit
-.streamlit/
 
 # Logs
 *.log
