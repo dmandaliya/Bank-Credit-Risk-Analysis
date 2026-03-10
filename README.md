@@ -1,5 +1,7 @@
 # Bank Credit Risk Analysis
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Streamlit-FF4B4B?logo=streamlit)](https://bank-credit-risk-analysis-gzqx4emhqj2zwgsv7wtbwk.streamlit.app/)
+
 End-to-end credit risk pipeline covering data engineering, statistical analysis, machine learning, and a live Streamlit dashboard simulating a bank's internal loan review system.
 
 **Stack:** Python · Pandas · NumPy · XGBoost · Scikit-learn · SMOTE · SciPy · Statsmodels · SQL · Matplotlib · Seaborn · openpyxl · Streamlit · Docker
